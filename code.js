@@ -12,7 +12,11 @@ class Pizza {
     this.toppings = toppings;
   }
 }
-
+var checkOut = () => {
+  alert("Your Pizza Will be Delivered in 15 mins");
+  document.getElementById("receit").style.display = "none";
+  document.querySelector(".landing-page").style.display = "block";
+};
 var form = document.getElementById("createorder");
 form.addEventListener("submit", createOrder);
 var pizzas = [];
