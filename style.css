@@ -61,11 +61,15 @@ body {
   text-transform: uppercase;
   padding: 10px 20px;
   transition: 0.4s linear;
+  cursor: pointer;
 }
 .page-content a:hover {
   color: #fff;
   background: #ff7979;
   text-decoration: none;
+}
+#receit {
+  display: inline;
 }
 /*
   ##Device = Desktops

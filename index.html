@@ -27,18 +27,54 @@
           delivered to you in only 15 minutes. Click the button below to place
           your order.
         </p>
-        <a href="#" onclick="startOrder()">Order Now</a>
+        <a onclick="startOrder()">Order Now</a>
       </div>
     </div>
     <div class="form-control" style="display: none;">
-      <label for="">Choose the size of pizza you want </label>
-      <select>
-        <option value="large">Large</option>
+      <form class="container text-center mt-5" id="createorder">
+        <div>
+          <label><h3>Choose the size of pizza you want :</h3></label>
+          <select id="size">
+            <option value="large">Large :1000</option>
 
-        <option value="medium">Medium</option>
-        <option value="small">Small</option>
-      </select>
+            <option value="medium">Medium :700</option>
+            <option value="small">Small :500</option>
+          </select>
+        </div>
+        <div>
+          <label><h3>Choose the type of crust you would like :</h3></label>
+          <select id="crust">
+            <option value="thin">Thin crust :100</option>
+            <option value="thick">Thick crust :150</option>
+            <option value="deep">Deep crust :200</option>
+          </select>
+        </div>
+        <div>
+          <label
+            ><h3>
+              What kind of toppings would you want on your pizza :
+            </h3></label
+          >
+          <select id="toppings">
+            <option value="pepporoni">Pepporoni : 100</option>
+            <option value="pinneaples">Pinnaples : 150</option>
+            <option value="mushrooms">Mushrooms : 200</option>
+          </select>
+        </div>
+        <input type="submit" value="Order Pizza" class="btn btn-dark" />
+      </form>
     </div>
+    <div id="receit" class="container text-center" style="display: none;">
+      <h4>Size : <span id="sizeprice"></span></h4>
+      <h4>Crust : <span id="crustprice"></span></h4>
+      <h4>Topping : <span id="toppingprice"></span></h4>
+      <h1>
+        Your Total Price is :
+        <span id="totalPrice"></span>
+      </h1>
+      <button class="btn btn-lg btn-primary">Check Out</button>
+    </div>
+
     <!-- Optional JavaScript -->
     <script src="js/aos.js"></script>
     <script>
