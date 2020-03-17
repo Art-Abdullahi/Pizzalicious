@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Personal CSS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Icon near the title -->
+    <title>Pizzalicious</title>
+    <link href="css/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="landing-page">
+      <div class="page-content container">
+        <h1>Pizzalicious</h1>
+        <p>
+          Welcome to Pizzalicious, get the best pizza your money can buy
+          delivered to you in only 15 minutes. Click the button below to place
+          your order.
+        </p>
+        <a href="#" onclick="startOrder()">Order Now</a>
+      </div>
+    </div>
+    <div class="form-control" style="display: none;">
+      <label for="">Choose the size of pizza you want </label>
+      <select>
+        <option value="large">Large</option>
+
+        <option value="medium">Medium</option>
+        <option value="small">Small</option>
+      </select>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="code.js"></script>
+    <script src="jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
