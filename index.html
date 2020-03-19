@@ -30,48 +30,62 @@
         <a onclick="startOrder()">Order Now</a>
       </div>
     </div>
-    <div class="form-control" style="display: none;">
+    <div class="form-control" style="display: none; height: 100vh;">
       <form class="container text-center mt-5" id="createorder">
-        <div>
-          <label><h3>Choose the size of pizza you want :</h3></label>
-          <select id="size">
-            <option value="large">Large :1000</option>
-
-            <option value="medium">Medium :700</option>
-            <option value="small">Small :500</option>
-          </select>
+        <div class="row">
+          <div class="label-input">
+            <label>Choose the size of pizza you want :</label>
+          </div>
+          <div class="input-script">
+            <select id="size">
+              <option value="large">Large :1000</option>
+              <option value="medium">Medium :700</option>
+              <option value="small">Small :500</option>
+            </select>
+          </div>
         </div>
-        <div>
-          <label><h3>Choose the type of crust you would like :</h3></label>
-          <select id="crust">
-            <option value="thin">Thin crust :100</option>
-            <option value="thick">Thick crust :150</option>
-            <option value="deep">Deep crust :200</option>
-          </select>
+        <div class="row">
+          <div class="label-input">
+            <label>Choose the type of crust you would like :</label>
+          </div>
+          <div class="input-script">
+            <select id="crust">
+              <option value="thin">Thin crust :100</option>
+              <option value="thick">Thick crust :150</option>
+              <option value="deep">Deep crust :200</option>
+            </select>
+          </div>
         </div>
-        <div>
-          <label
-            ><h3>
+        <div class="row">
+          <div class="label-input">
+            <label>
               What kind of toppings would you want on your pizza :
-            </h3></label
-          >
-          <select id="toppings">
-            <option value="pepporoni">Pepporoni : 100</option>
-            <option value="pinneaples">Pinnaples : 150</option>
-            <option value="mushrooms">Mushrooms : 200</option>
-          </select>
+            </label>
+          </div>
+          <div class="input-script">
+            <select id="toppings">
+              <option value="pepporoni">Pepporoni : 100</option>
+              <option value="pinneaples">Pinnaples : 150</option>
+              <option value="mushrooms">Mushrooms : 200</option>
+            </select>
+          </div>
         </div>
         <input type="submit" value="Order Pizza" class="btn btn-dark" />
       </form>
-    </div>
-    <div id="receit" class="container text-center" style="display: none;">
-      <h4>Size : <span id="sizeprice"></span></h4>
-      <h4>Crust : <span id="crustprice"></span></h4>
-      <h4>Topping : <span id="toppingprice"></span></h4>
-      <h1>
-        Your Total Price is :
-        <span id="totalPrice"></span>
-      </h1>
+    
+
+    <div id="receit" class="card" style="width: 18rem; display: none;">
+      <ul class="list-group">
+        <li class="list-group-item">Size : <span id="sizeprice"></span></li>
+        <li class="list-group-item">Crust : <span id="crustprice"></span></li>
+        <li class="list-group-item">
+          Topping : <span id="toppingprice"></span>
+        </li>
+        <li>
+          <h3>Your Total Price is :<span id="totalPrice"></span></h3>
+        </li>
+      </ul>
+
       <button class="btn btn-lg btn-primary" onclick="checkOut()">
         Check Out
       </button>

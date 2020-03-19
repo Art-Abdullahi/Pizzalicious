@@ -69,7 +69,47 @@ body {
   text-decoration: none;
 }
 #receit {
-  display: inline;
+  height: 70vh;
+  text-align: center !important;
+}
+.form-control {
+  background: url("img/pizza.jpg") no-repeat;
+  background-size: cover;
+}
+#createorder {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.row {
+  display: block;
+  padding-top: 20px;
+}
+.label-input {
+  display: block;
+  text-align: right;
+  width: 33%;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.btn {
+  width: 45%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 /*
   ##Device = Desktops
